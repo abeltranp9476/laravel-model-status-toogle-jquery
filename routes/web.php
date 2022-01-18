@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [App\Http\Controllers\UserController::class, 'index'])->name('home');
-Route::get('/status/update', [App\Http\Controllers\UserController::class, 'updateStatus'])->name('users.update.status');
+Route::post('/status/update', [App\Http\Controllers\UserController::class, 'updateStatus'])->name('users.update.status');
